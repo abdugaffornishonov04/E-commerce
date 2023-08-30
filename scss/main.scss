@@ -1,0 +1,22 @@
+@use "./base/typography";
+@use "./layout/toggles";
+@use "./categorii";
+@use "./home";
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #FBF8EC;
+  font-family: "Rubik";
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
