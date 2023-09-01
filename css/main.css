@@ -1997,6 +1997,7 @@
 
 .category-hero {
   margin-top: 124px;
+  margin-bottom: 50px;
 }
 .category-hero .category-hero__top {
   display: flex;
@@ -2032,6 +2033,7 @@
 }
 .category-hero .category-hero__content {
   display: flex;
+  gap: 30px;
 }
 .category-hero .category-hero__content .c-h-c-left {
   display: flex;
@@ -2101,7 +2103,133 @@
 }
 .category-hero .category-hero__content .c-h-c-right .c-h-c-right__row {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card {
+  width: 272px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 920px) {
+  .category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card {
+    width: 250px;
+  }
+}
+@media (max-width: 920px) {
+  .category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card {
+    width: 210px;
+  }
+}
+@media (max-width: 500px) {
+  .category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card {
+    width: 100%;
+  }
+}
+.category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-image {
+  width: 100%;
+  height: 172px;
+  position: relative;
+}
+@media (max-width: 920px) {
+  .category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-image img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-image img {
+    width: 100%;
+    height: 160px;
+  }
+}
+.category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-image p {
+  position: absolute;
+  bottom: 2px;
+  left: 3px;
+  width: 56px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #F63;
+  color: #fff;
+}
+.category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-image span {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-body {
+  display: flex;
+  flex-direction: column;
+}
+.category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-body .aksii-card-id {
+  margin: 0;
+  color: #606060;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-body .aksii-card-prices {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-body .aksii-card-prices p {
+  margin: 0;
+  color: #414141;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-body .aksii-card-description {
+  margin: 0;
+  color: #414141;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  height: 100px;
+}
+@media (max-width: 920px) {
+  .category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-body .aksii-card-description {
+    height: 100px;
+  }
+}
+@media (max-width: 270px) {
+  .category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-body .aksii-card-description {
+    height: 100px;
+    margin-bottom: 50px;
+  }
+}
+.category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-body .aksii-card-rating {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 4px;
+}
+.category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-body .aksii-card-rating img {
+  cursor: pointer;
+}
+.category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-body .aksii-card-btn {
+  cursor: pointer;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #70C05B;
+  color: #70C05B;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.category-hero .category-hero__content .c-h-c-right .c-h-c-right__row .aksii-card .aksii-card-body .aksii-card-btn:hover {
+  background-color: #F63;
+  border: 1px solid #F63;
+  color: #fff;
 }
 
 * {

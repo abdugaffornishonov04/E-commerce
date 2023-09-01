@@ -21,7 +21,7 @@ resCdDo.addEventListener("click", () => {
 
 function categoryCreateLink (el){
   const aLink = document.createElement("a");
-  aLink.href = "category.html";
+  aLink.href = `category.html?${el.name}`;
   aLink.innerHTML = `${el.name}`
 
   return aLink

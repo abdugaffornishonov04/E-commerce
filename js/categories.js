@@ -13,7 +13,7 @@ function ctGetCards( cat ) {
   ctFloat.className = "categorii-float";
 
   ctMainCard.addEventListener( 'click', () => {
-    window.location.href = 'category.html';
+    window.location.href = `category.html?${el.name}`;
   } );
 
 
