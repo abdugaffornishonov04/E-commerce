@@ -1,84 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-commerce | Categorii</title>
+  <title>E-commerce | Products</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-  
-  <!-- header -->
 
-  <header class="header">
-    <div class="container">
-      <div class="header-wrapper">
-        <a href="index.html" class="header-logo">
-          <img class="header-logo-img" src="Images/main-logo.png" alt="a logo">
-          <img class="header-res-logo" src="Images/header-res-logo.png" alt="an img">
-        </a>
-        <div class="header-category-link-div">
-          <button class="header-category-dropdown">
-            <img src="Images/menu.svg" alt="a hamburger menu">
-          </button>
-          <a href="categorii.html">Каталог</a>
+<body>
+  <!-- HEADER -->
+
+<header class="header">
+  <div class="container">
+    <div class="header-wrapper">
+      <a href="index.html" class="header-logo">
+        <img class="header-logo-img" src="Images/main-logo.png" alt="a logo">
+        <img class="header-res-logo" src="Images/header-res-logo.png" alt="an img">
+      </a>
+      <div class="header-category-link-div">
+        <button class="header-category-dropdown">
+          <img src="Images/menu.svg" alt="a hamburger menu">
+        </button>
+        <a href="categorii.html">Каталог</a>
+      </div>
+      <form action="#">
+        <input type="search" placeholder="Найти товар">
+        <img src="Images/search.svg" alt="a search icon">
+      </form>
+      <nav>
+        <div class="navbar-wrapper">
+          <a href="favorites.html" class="navbar-favorite-link">
+            <span class="shopping-number">1</span>
+            <img src="Images/like-header-logo.svg" alt="a heart shaped like">
+            <p>Избранное</p>
+          </a>
+          <a href="products.html" class="navbar-products-link">
+            <img src="Images/product-header-logo.svg" alt="a box">
+            <p>продукты</p>
+          </a>
+          <a href="cart.html" class="navbar-cart-link">
+            <span class="shopping-number">1</span>
+            <img src="Images/shopping-cart.svg" alt="a shopping vehicle">
+            <p>Корзина</p>
+          </a>
         </div>
-        <form action="#">
-          <input type="search" placeholder="Найти товар">
-          <img src="Images/search.svg" alt="a search icon">
-        </form>
-        <nav>
-          <div class="navbar-wrapper">
-            <a href="favorites.html" class="navbar-favorite-link">
-              <span class="shopping-number">1</span>
-              <img src="Images/like-header-logo.svg" alt="a heart shaped like">
-              <p>Избранное</p>
-            </a>
-            <a href="products.html" class="navbar-products-link">
-              <img src="Images/product-header-logo.svg" alt="a box">
-              <p>продукты</p>
-            </a>
-            <a href="cart.html" class="navbar-cart-link">
-              <span class="shopping-number">1</span>
-              <img src="Images/shopping-cart.svg" alt="a shopping vehicle">
-              <p>Корзина</p>
-            </a>
-          </div>
-        </nav>
-        <div class="header-sign-div">
-          <img src="Images/header-sign-avatar.svg" alt="a persons avatar probably named Aleksey">
-          <button class="sign-in-btn">Алексей</button>
-          <img src="Images/chevron-down.svg" alt="chevron down or an arrow showing the bottom">
-        </div>
+      </nav>
+      <div class="header-sign-div">
+        <img src="Images/header-sign-avatar.svg" alt="a persons avatar probably named Aleksey">
+        <button class="sign-in-btn">Алексей</button>
+        <img src="Images/chevron-down.svg" alt="chevron down or an arrow showing the bottom">
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
   <main>
 
-    <!-- hero -->
+    <!-- products hero -->
 
-        <section class="categorii-hero">
-          <div class="container">
-            <div class="categorii-wrapper">
-              <div class="categorii-top">
-                <a href="./index.html">Главная</a>
-                <img src="./images/chevron-right.svg" alt="an img">
-                <a href="./categorii.html">Каталог</a>
-              </div>
-              <div class="categorii-middle">
-                <h1>Каталог</h1>
-              </div>
-              <div class="categorii-bottom">
-      
+    <section class="products-hero">
+      <div class="container">
+        <div class="products-hero__wrapper">
+          <div class="products-hero__top">
+            <h1>Все продукты</h1>
+          </div>
+          <div class="products-hero__bottom">
+            <div class="products-hero__bottom-search">
+              <form action="#">
+                <input class="products-search-input" type="search" placeholder="Search for products...">
+              </form>
+              <div class="total-products">
+                <p>Total Products: <span class="total-products-count">0</span></p>
               </div>
             </div>
+            <div class="products-hero__bottom-row">
+
+            </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- pagination -->
+
+    <section class="products-pagination">
+      <div class="container">
+        <div class="p-p-wrapper">
+          <div class="p-p-content">
+
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- footer -->
-  
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
@@ -115,21 +131,21 @@
       </div>
     </div>
   </footer>
-  
+
   <!-- category dropdown -->
-  
+
   <div class="header-category-dropdown-content">
     <div class="container">
       <div class="header-category-dropdown-content-row">
-  
+
       </div>
     </div>
   </div>
-  
+
   <!-- responsive navbar at the bottom -->
   <div class="header-responsive-navbar">
     <div class="navbar-wrapper">
-  
+
       <a href="#" class="res-category-menu">
         <button class="res-c-d-d-o"><img src="Images/reshamburger.png" alt="a menu"></button>
         <p>Каталог</p>
@@ -148,16 +164,19 @@
         <img src="Images/shopping-cart.svg" alt="a shopping vehicle">
         <p>Корзина</p>
       </a>
-  
+
     </div>
   </div>
   <!-- tap to see navbe in responsive -->
   <button class="tapToSeeNavbar">
     See Navbar
   </button>
-
-  <script src="js/categories-data.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/categories.js"></script>
 </body>
+
+<script src="js/products-data.js"></script>
+<script src="js/categories-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+<script src="js/products.js"></script>
+
 </html>

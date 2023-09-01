@@ -1,0 +1,272 @@
+@use "./home";
+
+////products hero
+
+.products-hero {
+  margin-top: 166px;
+
+  .products-hero__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .products-hero__top {
+      h1 {
+        color: #414141;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+      }
+    }
+
+    .products-hero__bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .products-hero__bottom-search {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .products-search-input {
+          width: 100%;
+          padding: 20px 10px;
+          background-color: transparent;
+          color: #70C05B;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          outline: none;
+          border: 1px solid #70C05B;
+          border-radius: 6px;
+        }
+
+        .total-products {
+          width: 100%;
+          padding-left: 10px;
+          background-color: #FFF3CD;
+          border-radius: 6px;
+
+          p {
+            color: #000;
+          }
+        }
+      }
+
+
+      .aksii-content-row,
+      .products-hero__bottom-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        @media (max-width:1215px) {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width:725px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width:500px) {
+          grid-template-columns: repeat(1, 1fr);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+
+        .aksii-card {
+          width: 272px;
+          padding: 8px;
+          display: flex;
+          flex-direction: column;
+          background-color: #fff;
+          transition: 0.3s ease-in-out;
+
+          @media (max-width:920px) {
+            width: 250px;
+          }
+
+          @media (max-width:920px) {
+            width: 210px;
+          }
+
+          @media (max-width:500px) {
+            width: 100%;
+          }
+
+          .aksii-card-image {
+            width: 100%;
+            height: 172px;
+            position: relative;
+
+            img {
+              @media (max-width:920px) {
+                width: 100%;
+              }
+
+              @media (max-width:500px) {
+                width: 100%;
+                height: 160px;
+              }
+            }
+
+            p {
+              position: absolute;
+              bottom: 2px;
+              left: 3px;
+              width: 56px;
+              padding: 4px 8px;
+              border-radius: 4px;
+              background: #F63;
+              color: #fff;
+            }
+
+            span {
+              position: absolute;
+              right: 20px;
+              top: 10px;
+            }
+          }
+
+          .aksii-card-body {
+            display: flex;
+            flex-direction: column;
+
+            .aksii-card-id {
+              margin: 0;
+              color: #606060;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+            }
+
+            .aksii-card-prices {
+              margin-top: 10px;
+              margin-bottom: 10px;
+
+              p {
+                margin: 0;
+                ;
+                color: #414141;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%;
+              }
+            }
+
+            .aksii-card-description {
+              margin: 0;
+              height: 100px;
+              color: #414141;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+
+              @media(max-width:920px) {
+                height: 100px;
+              }
+
+              @media(max-width:270px) {
+                height: 100px;
+                margin-bottom: 50px;
+              }
+            }
+
+            .aksii-card-rating {
+              margin-top: 10px;
+              margin-bottom: 10px;
+              display: flex;
+              gap: 4px;
+
+              img {
+                cursor: pointer;
+              }
+            }
+
+            .aksii-card-btn {
+              cursor: pointer;
+              padding: 8px;
+              background-color: #fff;
+              border-radius: 4px;
+              border: 1px solid #70C05B;
+              color: #70C05B;
+              text-align: center;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+
+              &:hover {
+                background-color: #F63;
+                border: 1px solid #F63;
+                color: #fff;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+////products pagination
+
+.products-pagination {
+  margin-top: 64px;
+  margin-bottom: 62px;
+
+  .p-p-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .p-p-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+
+      img {
+        cursor: pointer;
+      }
+
+      .p-p-1,
+      .p-p-2,
+      .p-p-3,
+      .p-p-4,
+      .p-p-5 {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        color: #606060;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+      }
+
+
+
+      .active-page {
+        padding:5px 15px;
+        background-color: #F63;
+        font-size: 22px;
+        color: #fff;
+        border-radius:60%;
+      }
+    }
+  }
+}
+
+.display-none{
+  opacity: 0;
+  z-index: -7;
+}

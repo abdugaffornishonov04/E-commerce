@@ -31,6 +31,9 @@ function getProductCards( el ) {
   aksiiCardId.className = "aksii-card-id novinki-card-id popular-card-id";
   const aksiiCardPrices = document.createElement( "div" );
   aksiiCardPrices.className = "aksii-card-prices novinki-card-prices popular-card-prices";
+  const aksiiCardproductName = document.createElement( "p" );
+  aksiiCardproductName.innerHTML = `${el.name}`;
+  aksiiCardproductName.className = "aksii-card-name novinki-card-name popular-card-name";
   const aksiiCardPricesP = document.createElement( "p" );
   aksiiCardPricesP.innerHTML = `${el.price} ₽`;
   aksiiCardPrices.append( aksiiCardPricesP );
@@ -67,6 +70,7 @@ function getProductCards( el ) {
 
   aksiiCardBody.append(
     aksiiCardId,
+    aksiiCardproductName,
     aksiiCardPrices,
     aksiiDescription,
     aksiiCardRating,
@@ -88,13 +92,12 @@ let lastFourProduct = products.slice( -4 );
 
 discountHasProducts.map( ( el ) => {
   let card = getProductCards( el );
-  theAksiiRow.append( card )
+  theAksiiRow.append(card)
 } )
 
 ///the last four products
 lastFourProduct.map( ( el ) => {
   let card = getProductCards( el );
-  console.log( card );
   theNovinkiRow.append( card )
 } )
 
@@ -102,7 +105,6 @@ lastFourProduct.map( ( el ) => {
 let sortedProducts = products.sort( ( a, b ) => b.rating - a.rating );
 let topFourRating = sortedProducts.slice( 0, 4 );
 
-console.log( topFourRating );
 
 topFourRating.map( ( el ) => {
   let card = getProductCards( el );
@@ -283,7 +285,6 @@ articlesArray.map( ( el ) => {
 ///card rating dynamic
 
 let theRatingStar = document.querySelectorAll( ".aksii-card-rating img" );
-console.log( theRatingStar );
 
 let theRatingStars = document.querySelectorAll( ".aksii-card-rating img" );
 
