@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce | Favorites</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- header -->
+
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="index.html" class="header-logo">
+          <img class="header-logo-img" src="Images/main-logo.png" alt="a logo">
+          <img class="header-res-logo" src="Images/header-res-logo.png" alt="an img">
+        </a>
+        <div class="header-favorites-link-div">
+          <button class="header-favorites-dropdown">
+            <img src="Images/menu.svg" alt="a hamburger menu">
+          </button>
+          <a href="categorii.html">Каталог</a>
+        </div>
+        <form action="#">
+          <input type="search" placeholder="Найти товар">
+          <img src="Images/search.svg" alt="a search icon">
+        </form>
+        <nav>
+          <div class="navbar-wrapper">
+            <a href="favorites.html" class="navbar-favorite-link">
+              <span class="liked-number">1</span>
+              <img src="Images/like-header-logo.svg" alt="a heart shaped like">
+              <p>Избранное</p>
+            </a>
+            <a href="products.html" class="navbar-products-link">
+              <img src="Images/product-header-logo.svg" alt="a box">
+              <p>продукты</p>
+            </a>
+            <a href="cart.html" class="navbar-cart-link">
+              <span class="shopping-number"></span>
+              <img src="Images/shopping-cart.svg" alt="a shopping vehicle">
+              <p>Корзина</p>
+            </a>
+          </div>
+        </nav>
+        <div class="header-sign-div">
+          <img src="Images/header-sign-avatar.svg" alt="a persons avatar probably named Aleksey">
+          <button class="sign-in-btn">Алексей</button>
+          <img src="Images/chevron-down.svg" alt="chevron down or an arrow showing the bottom">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="favorites-hero">
+      <div class="container">
+        <div class="favorites-hero__top">
+          <a href="index.html">Главная</a>
+          <img src="Images/chevron-right.svg" alt="an img">
+          <a href="categorii.html">Каталог</a>
+          <img src="Images/chevron-right.svg" alt="an img">
+          <a href="favorites.html">Молоко, сыр, яйцо</a>
+        </div>
+        <h1 class="favorites-hero__title">
+    
+        </h1>
+        <div class="favorites-hero__content">
+          <div class="c-h-c-left">
+            <p class="c-h-c-left__filter">Фильтр</p>
+            <div class="c-h-c-left__filter__control">
+              <p>Цена</p>
+              <button>Очистить</button>
+            </div>
+            <form action="#">
+              <input class="favorites-firstinput" type="text" value="1">
+              <input class="favorites-secondinput" type="text" value="100">
+            </form>
+            <img src="Images/favorites-filter-line.png" alt="a green shaped filtering thing">
+          </div>
+          <div class="c-h-c-right">
+            <div class="c-h-c-right__row"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

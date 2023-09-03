@@ -1,8 +1,11 @@
+
 let productsRow = document.querySelector( ".products-hero__bottom-row" );
 let totalProductsCount = document.querySelector( ".total-products-count" );
 let theRatingStarsProducts = document.querySelectorAll( ".aksii-card-rating img" );
 let productsSearchInput = document.querySelector( ".products-search-input" );
 let paginationContent = document.querySelector( ".p-p-content" );
+
+
 
 let activePage = 1;
 
@@ -83,3 +86,46 @@ function getPage(page){
   }
   getProductsProduct()
 }
+
+
+////cart card adding
+
+function addToCart( id ) {
+
+  let product = products.find( ( el ) => el.id == id );
+  let check = cart.find( ( el ) => el.id == id );
+
+  if ( check ) {
+    cart = cart.map( ( pr ) => {
+      if ( pr.id == id ) {
+        pr.quantity++
+      }
+      return pr;
+    } )
+  } else {
+    product.quantity = 1
+    cart.push( product )
+  }
+
+  localStorage.setItem( "cart", JSON.stringify( cart ) )
+  getCartTotal()
+  getProductsProduct()
+}
+
+///like adding
+
+function addToLiked( id ) {
+  let product = products.find( ( el ) => el.id == id );
+  let check = like.find( ( el ) => el.id == id );
+
+  if ( check ) {
+    like = like.filter( el => el.id != id );
+  } else {
+    like.push( product )
+  }
+
+  localStorage.setItem( "like", JSON.stringify( like ) )
+  getLikeTotal()
+  getProductsProduct()
+}
+

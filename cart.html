@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-commerce | Category</title>
+  <title>E-commerce | Cart</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -57,35 +57,34 @@
 
   <main>
 
-    <!-- category hero -->
+    <!-- hero -->
 
-    <section class="category-hero">
+    <section class="korzinka-hero">
       <div class="container">
-        <div class="category-hero__top">
-          <a href="index.html">Главная</a>
-          <img src="Images/chevron-right.svg" alt="an img">
-          <a href="categorii.html">Каталог</a>
-          <img src="Images/chevron-right.svg" alt="an img">
-          <a href="category.html">Молоко, сыр, яйцо</a>
-        </div>
-        <h1 class="category-hero__title">
-
-        </h1>
-        <div class="category-hero__content">
-          <div class="c-h-c-left">
-            <p class="c-h-c-left__filter">Фильтр</p>
-            <div class="c-h-c-left__filter__control">
-              <p>Цена</p>
-              <button>Очистить</button>
+        <div class="korzinka-hero__wrapper">
+          <div class="korzinka-hero__top">
+            <div class="korzinka-hero__top-links">
+              <a href="index.html">Главная</a>
+              <img src="Images/chevron-right.png" alt="an img">
+              <a href="cart.html">Корзина</a>
             </div>
-            <form action="#">
-              <input class="category-firstinput" type="text" value="1">
-              <input class="category-secondinput" type="text" value="100">
-            </form>
-            <img src="Images/category-filter-line.png" alt="a green shaped filtering thing">
+            <h1 class="korzinka-hero__title">Корзина <span></span></h1>
           </div>
-          <div class="c-h-c-right">
-            <div class="c-h-c-right__row"></div>
+          <div class="korzinka-hero__main">
+            <div class="korzinka-hero__main-content">
+              <div class="korzinka-hero__main-content__btns">
+                <button class="korzinka-select-all-btn">
+                  <div>-</div>Выделить всё
+                </button>
+                <button class="korzinka-delete-all-btn">Удалить выбранные</button>
+              </div>
+              <div class="korzinka-hero__main-content__cards">
+                
+              </div>
+            </div>
+            <div class="korzinka-hero__main-prices-bar-wrapper">
+              
+            </div>
           </div>
         </div>
       </div>
@@ -93,44 +92,7 @@
   </main>
 
 
-  <!-- footer -->
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-wrapper">
-        <div class="footer-top">
-          <div class="footer-logo">
-            <img src="./images/footerlogoofec.png" alt="an img">
-          </div>
-          <div class="footer-nav">
-            <ul>
-              <li><a href="./about.html">О компании </a></li>
-              <li><a href="./contact.html">Контакты</a></li>
-              <li><a href="./vacancy.html">Вакансии</a></li>
-              <li><a href="./favorites.html">Статьи</a></li>
-              <li><a href="./category.html">Политика обработки персональных данных</a></li>
-            </ul>
-          </div>
-          <div class="footer-social">
-            <a href="https://www.instagram.com/_tycoonme/" class="instagram">
-              <img src="./images/instagram.svg" alt="a logo">
-            </a>
-            <a href="https://t.me/tycoon_me"><img src="./images/vkontakte.svg" alt="an img"></a>
-            <a href="https://t.me/tycoon_me"><img src="./images/facebook.svg" alt="an img"></a>
-            <a href="https://t.me/tycoon_me"><img src="./images/ok.svg" alt="an img"></a>
-          </div>
-          <div class="footer-end">
-            <img src="./images/phone.svg" alt="an img">
-            <p>8 800 777 33 33</p>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>Дизайн</p>
-          <img src="./images/logo-zasovskiy-small-black.svg" alt="an img">
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <!-- category dropdown -->
 
@@ -172,12 +134,10 @@
     See Navbar
   </button>
 
-
-  <script src="js/categories-data.js"></script>
   <script src="js/products-data.js"></script>
+  <script src="js/categories-data.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/home.js"></script>
-  <script src="js/category.js"></script>
+  <script src="js/cart.js"></script>
 </body>
 
 </html>

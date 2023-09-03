@@ -1,7 +1,8 @@
 const ctMainRow = document.querySelector( ".categorii-bottom" );
 
 function ctGetCards( cat ) {
-  const ctMainCard = document.createElement( "div" );
+  const ctMainCard = document.createElement( "a" );
+  ctMainCard.href = `category.html?${cat.name}`;
   ctMainCard.className = "categorii-bottom__card";
   const ctMainCardImg = document.createElement( "img" );
   ctMainCardImg.src = `${cat.image}`;
@@ -12,9 +13,7 @@ function ctGetCards( cat ) {
   const ctFloat = document.createElement( "div" );
   ctFloat.className = "categorii-float";
 
-  ctMainCard.addEventListener( 'click', () => {
-    window.location.href = `category.html?${el.name}`;
-  } );
+ 
 
 
   ctMainCard.append( ctMainCardImg, ctMainCardTitle, ctFloat )

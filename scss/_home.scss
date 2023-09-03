@@ -363,7 +363,9 @@
     }
 
     .aksii-bottom {
-      .aksii-content-row, .products-hero__bottom-row {
+
+      .aksii-content-row,
+      .products-hero__bottom-row {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
@@ -432,9 +434,23 @@
             }
 
             span {
+              padding: 5px 5px;
+              width: 30px;
+              height: 30px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #fff;
+              border-radius: 50%;
               position: absolute;
               right: 20px;
               top: 10px;
+              cursor: pointer;
+
+              img {
+                width: 100%;
+                object-fit: contain;
+              }
             }
           }
 
@@ -638,9 +654,23 @@
             }
 
             span {
+              padding: 5px 5px;
+              width: 30px;
+              height: 30px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #fff;
+              border-radius: 50%;
               position: absolute;
               right: 20px;
               top: 10px;
+              cursor: pointer;
+
+              img {
+                width: 100%;
+                object-fit: contain;
+              }
             }
           }
 
@@ -839,9 +869,23 @@
             }
 
             span {
+              padding: 5px 5px;
+              width: 30px;
+              height: 30px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #fff;
+              border-radius: 50%;
               position: absolute;
               right: 20px;
               top: 10px;
+              cursor: pointer;
+
+              img {
+                width: 100%;
+                object-fit: contain;
+              }
             }
           }
 
@@ -1762,5 +1806,19 @@
 
   img {
     object-fit: contain;
+  }
+}
+
+
+////in cart or not
+
+
+.activeInCart {
+  background-color: #70C05B !important;
+  color: #fff !important;
+  border: 1px solid #F63 !important;
+
+  &:hover {
+    border: 1px solid #fff !important;
   }
 }

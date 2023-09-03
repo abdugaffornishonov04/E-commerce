@@ -126,9 +126,23 @@
             }
 
             span {
+              padding: 5px 5px;
+              width: 30px;
+              height: 30px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #fff;
+              border-radius: 50%;
               position: absolute;
               right: 20px;
               top: 10px;
+              cursor: pointer;
+
+              img {
+                width: 100%;
+                object-fit: contain;
+              }
             }
           }
 
@@ -256,17 +270,17 @@
 
 
       .active-page {
-        padding:5px 15px;
+        padding: 5px 15px;
         background-color: #F63;
         font-size: 22px;
         color: #fff;
-        border-radius:60%;
+        border-radius: 60%;
       }
     }
   }
 }
 
-.display-none{
+.display-none {
   opacity: 0;
   z-index: -7;
 }
