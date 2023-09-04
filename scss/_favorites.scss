@@ -1,0 +1,275 @@
+.favorites-hero {
+  margin-top: 124px;
+  margin-bottom: 50px;
+
+  .favorites-hero__top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    a {
+      color: #414141;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+
+      &:last-child {
+        color: #8F8F8F;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+      }
+
+      &:hover {
+        color: #70C05B;
+      }
+    }
+  }
+
+  .favorites-hero__title {
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 60px;
+    color: #414141;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  .favorites-hero__content {
+    display: flex;
+    gap: 30px;
+
+    .c-h-c-left {
+      display: flex;
+      flex-direction: column;
+
+      .c-h-c-left__filter {
+        margin-bottom: 40px;
+        width: 272px;
+        padding: 10px;
+        border-radius: 4px;
+        background: #F3F2F1;
+        color: #414141;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+      }
+
+      .c-h-c-left__filter__control {
+        margin-bottom: 13px;
+        width: 272px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          color: #000;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+
+        button {
+          width: 85px;
+          height: 32px;
+          padding: 8px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 4px;
+          background-color: #F3F2F1;
+          color: #606060;
+          text-align: center;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          border: none;
+        }
+      }
+
+      form {
+        margin-bottom: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+          width: 124px;
+          height: 40px;
+          padding: 8px 16px;
+          border-radius: 4px;
+          border: 1px solid #bfbfbf;
+          background-color: #fff;
+          outline: none;
+        }
+      }
+    }
+
+    .f-h-f-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .f-h-f-right__row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        .aksii-card {
+          width: 272px;
+          padding: 8px;
+          display: flex;
+          flex-direction: column;
+          background-color: #fff;
+          transition: 0.3s ease-in-out;
+
+          @media (max-width:920px) {
+            width: 250px;
+          }
+
+          @media (max-width:920px) {
+            width: 210px;
+          }
+
+          @media (max-width:500px) {
+            width: 100%;
+          }
+
+          .aksii-card-image {
+            width: 100%;
+            height: 172px;
+            position: relative;
+
+            img {
+              @media (max-width:920px) {
+                width: 100%;
+              }
+
+              @media (max-width:500px) {
+                width: 100%;
+                height: 160px;
+              }
+            }
+
+            p {
+              position: absolute;
+              bottom: 2px;
+              left: 3px;
+              width: 56px;
+              padding: 4px 8px;
+              border-radius: 4px;
+              background: #F63;
+              color: #fff;
+            }
+
+                        span {
+                          padding: 5px 5px;
+                          width: 30px;
+                          height: 30px;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          background-color: #fff;
+                          border-radius: 50%;
+                          position: absolute;
+                          right: 20px;
+                          top: 10px;
+                          cursor: pointer;
+            
+                          img {
+                            width: 100%;
+                            object-fit: contain;
+                          }
+                        }
+          }
+
+          .aksii-card-body {
+            display: flex;
+            flex-direction: column;
+
+            .aksii-card-id {
+              margin: 0;
+              color: #606060;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+            }
+
+            .aksii-card-prices {
+              margin-top: 10px;
+              margin-bottom: 10px;
+
+              p {
+                margin: 0;
+                ;
+                color: #414141;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%;
+              }
+            }
+
+            .aksii-card-description {
+              margin: 0;
+              color: #414141;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+              height: 100px;
+
+              @media(max-width:920px) {
+                height: 100px;
+              }
+
+              @media(max-width:270px) {
+                height: 100px;
+                margin-bottom: 50px;
+              }
+            }
+
+            .aksii-card-rating {
+              margin-top: 10px;
+              margin-bottom: 10px;
+              display: flex;
+              gap: 4px;
+
+              img {
+                cursor: pointer;
+              }
+            }
+
+            .aksii-card-btn {
+              cursor: pointer;
+              padding: 8px;
+              background-color: #fff;
+              border-radius: 4px;
+              border: 1px solid #70C05B;
+              color: #70C05B;
+              text-align: center;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+
+              &:hover {
+                background-color: #F63;
+                border: 1px solid #F63;
+                color: #fff;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

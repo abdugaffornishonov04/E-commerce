@@ -18,8 +18,8 @@
           <img class="header-logo-img" src="Images/main-logo.png" alt="a logo">
           <img class="header-res-logo" src="Images/header-res-logo.png" alt="an img">
         </a>
-        <div class="header-favorites-link-div">
-          <button class="header-favorites-dropdown">
+        <div class="header-category-link-div">
+          <button class="header-category-dropdown">
             <img src="Images/menu.svg" alt="a hamburger menu">
           </button>
           <a href="categorii.html">Каталог</a>
@@ -55,39 +55,82 @@
     </div>
   </header>
 
-  <main>
-    <section class="favorites-hero">
-      <div class="container">
-        <div class="favorites-hero__top">
-          <a href="index.html">Главная</a>
-          <img src="Images/chevron-right.svg" alt="an img">
-          <a href="categorii.html">Каталог</a>
-          <img src="Images/chevron-right.svg" alt="an img">
-          <a href="favorites.html">Молоко, сыр, яйцо</a>
+
+  <section class="favorites-hero">
+    <div class="container">
+      <div class="favorites-hero__top">
+        <a href="index.html">Главная</a>
+        <img src="Images/chevron-right.svg" alt="an img">
+        <a href="favorites.html">Избраное</a>
+      </div>
+      <h1 class="favorites-hero__title">
+        Избраное
+      </h1>
+      <div class="favorites-hero__content">
+        <div class="c-h-c-left">
+          <p class="c-h-c-left__filter">Фильтр</p>
+          <div class="c-h-c-left__filter__control">
+            <p>Цена</p>
+            <button>Очистить</button>
+          </div>
+          <form action="#">
+            <input class="favorites-firstinput" type="text" value="1">
+            <input class="favorites-secondinput" type="text" value="100">
+          </form>
+          <img src="Images/category-filter-line.png" alt="a green shaped filtering thing">
         </div>
-        <h1 class="favorites-hero__title">
-    
-        </h1>
-        <div class="favorites-hero__content">
-          <div class="c-h-c-left">
-            <p class="c-h-c-left__filter">Фильтр</p>
-            <div class="c-h-c-left__filter__control">
-              <p>Цена</p>
-              <button>Очистить</button>
-            </div>
-            <form action="#">
-              <input class="favorites-firstinput" type="text" value="1">
-              <input class="favorites-secondinput" type="text" value="100">
-            </form>
-            <img src="Images/favorites-filter-line.png" alt="a green shaped filtering thing">
-          </div>
-          <div class="c-h-c-right">
-            <div class="c-h-c-right__row"></div>
-          </div>
+        <div class="f-h-f-right">
+          <div class="f-h-f-right__row"></div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <!-- category dropdown -->
+
+  <div class="header-category-dropdown-content">
+    <div class="container">
+      <div class="header-category-dropdown-content-row">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- responsive navbar at the bottom -->
+  <div class="header-responsive-navbar">
+    <div class="navbar-wrapper">
+
+      <a href="#" class="res-category-menu">
+        <button class="res-c-d-d-o"><img src="Images/reshamburger.png" alt="a menu"></button>
+        <p>Каталог</p>
+      </a>
+      <a href="#" class="navbar-favorite-link">
+        <span class="shopping-number">1</span>
+        <img src="Images/like-header-logo.svg" alt="a heart shaped like">
+        <p>Избранное</p>
+      </a>
+      <a href="#" class="navbar-products-link">
+        <img src="Images/product-header-logo.svg" alt="a box">
+        <p>продукты</p>
+      </a>
+      <a href="#" class="navbar-cart-link">
+        <span class="shopping-number">1</span>
+        <img src="Images/shopping-cart.svg" alt="a shopping vehicle">
+        <p>Корзина</p>
+      </a>
+
+    </div>
+  </div>
+  <!-- tap to see navbe in responsive -->
+  <button class="tapToSeeNavbar">
+    See Navbar
+  </button>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/categories-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/favorite.js"></script>
 </body>
 
 </html>
