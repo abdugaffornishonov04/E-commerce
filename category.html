@@ -11,49 +11,74 @@
 <body>
   <!-- HEADER -->
 
-  <header class="header">
-    <div class="container">
-      <div class="header-wrapper">
-        <a href="index.html" class="header-logo">
-          <img class="header-logo-img" src="Images/main-logo.png" alt="a logo">
-          <img class="header-res-logo" src="Images/header-res-logo.png" alt="an img">
-        </a>
-        <div class="header-category-link-div">
-          <button class="header-category-dropdown">
-            <img src="Images/menu.svg" alt="a hamburger menu">
-          </button>
-          <a href="categorii.html">Каталог</a>
+<header class="header">
+  <div class="container">
+    <div class="header-wrapper">
+      <a href="index.html" class="header-logo">
+        <img class="header-logo-img" src="Images/main-logo.png" alt="a logo">
+        <img class="header-res-logo" src="Images/header-res-logo.png" alt="an img">
+      </a>
+      <div class="header-category-link-div">
+        <button class="header-category-dropdown">
+          <img src="Images/menu.svg" alt="a hamburger menu">
+        </button>
+        <a href="categorii.html">Каталог</a>
+      </div>
+      <form id="header-s-form" action="#">
+        <input type="search" placeholder="Найти товар">
+        <img src="Images/search.svg" alt="a search icon">
+      </form>
+      <nav>
+        <div class="navbar-wrapper">
+          <a href="favorites.html" class="navbar-favorite-link">
+            <span class="liked-number">1</span>
+            <img src="Images/like-header-logo.svg" alt="a heart shaped like">
+            <p>Избранное</p>
+          </a>
+          <a href="products.html" class="navbar-products-link">
+            <img src="Images/product-header-logo.svg" alt="a box">
+            <p>продукты</p>
+          </a>
+          <a href="cart.html" class="navbar-cart-link">
+            <span class="shopping-number"></span>
+            <img src="Images/shopping-cart.svg" alt="a shopping vehicle">
+            <p>Корзина</p>
+          </a>
         </div>
-        <form action="#">
-          <input type="search" placeholder="Найти товар">
-          <img src="Images/search.svg" alt="a search icon">
-        </form>
-        <nav>
-          <div class="navbar-wrapper">
-            <a href="favorites.html" class="navbar-favorite-link">
-              <span class="liked-number">1</span>
-              <img src="Images/like-header-logo.svg" alt="a heart shaped like">
-              <p>Избранное</p>
-            </a>
-            <a href="products.html" class="navbar-products-link">
-              <img src="Images/product-header-logo.svg" alt="a box">
-              <p>продукты</p>
-            </a>
-            <a href="cart.html" class="navbar-cart-link">
-              <span class="shopping-number">1</span>
-              <img src="Images/shopping-cart.svg" alt="a shopping vehicle">
-              <p>Корзина</p>
-            </a>
-          </div>
-        </nav>
-        <div class="header-sign-div">
-          <img src="Images/header-sign-avatar.svg" alt="a persons avatar probably named Aleksey">
-          <button class="sign-in-btn">Алексей</button>
-          <img src="Images/chevron-down.svg" alt="chevron down or an arrow showing the bottom">
+      </nav>
+      <div class="header-sign-div">
+        <img src="Images/header-sign-avatar.svg" alt="a persons avatar probably named Aleksey">
+        <button class="sign-in-btn">Алексей</button>
+        <img src="Images/chevron-down.svg" alt="chevron down or an arrow showing the bottom">
+
+        <div class="header-sign-in-modal">
+          <form action="#" id="header-s-i-form">
+            <h2>Sign In</h2>
+            <div class="header-sign-in-modal-wrapper">
+              <div class="sign-in-modal-input-group1 sign-in-modal-input-group">
+                <label for="header-sign-in-modal-name-input">Enter your name</label>
+                <input id="header-sign-in-modal-name-input" type="text">
+                <p></p>
+              </div>
+              <div class="sign-in-modal-input-group2 sign-in-modal-input-group">
+                <label for="header-sign-in-modal-surname-input">Enter your name</label>
+                <input id="header-sign-in-modal-surname-input" type="text">
+                <p></p>
+              </div>
+              <div class="sign-in-modal-input-group3 sign-in-modal-input-group">
+                <label for="header-sign-in-modal-tel-input">Enter your name</label>
+                <input id="header-sign-in-modal-tel-input" type="tel">
+                <p></p>
+              </div>
+              <button class="header-sign-in-modal-submit-button" type="submit">Submit</button>
+            </div>
+            <button class="header-sign-in-modal-closer-btn"><img src="Images/x.png" alt="close img"></button>
+          </form>
         </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
   <main>
 

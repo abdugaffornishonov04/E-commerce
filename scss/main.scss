@@ -6,6 +6,8 @@
 @use "./category";
 @use "./cart";
 @use "./favorites";
+@use "./helper/header-sign";
+@use "./product";
 
 * {
   box-sizing: border-box;

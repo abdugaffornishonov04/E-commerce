@@ -1,0 +1,396 @@
+.pro-hero {
+  margin-top: 120px;
+  margin-bottom: 100px;
+
+  .pro-hero-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .pro-hero-top {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      p {
+        color: #414141;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+      }
+
+      span {
+        color: #8F8F8F;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+      }
+    }
+
+    .pro-hero-middle {
+      margin-top: 23px;
+      margin-bottom: 23px;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        color: #414141;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        p {
+          &:first-child {
+            color: #414141;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+          }
+        }
+
+        .pro-middle-span1 {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+
+          a {
+            margin-left: 4px;
+            color: #414141;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            text-decoration-line: underline;
+          }
+        }
+
+        .pro-middle-span2 {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          p {
+            color: #606060;
+            text-align: center;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+          }
+        }
+
+        .pro-middle-span3 {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          p {
+            color: #606060;
+            text-align: center;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+
+    .pro-hero-bottom {
+      display: flex;
+      gap: 40px;
+
+      @media(max-width:1040px){
+        flex-direction: column;
+        align-items:center;
+      }
+
+      .pro-hero-bottom-left {
+        display: flex;
+        gap: 10px;
+        position: relative;
+
+        .images-pro {
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+
+          img {
+            cursor: pointer;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+          }
+        }
+
+        .pro-hero-bottom-left-mainimg {
+          width: 505px;
+          height: 495px;
+          object-fit: cover;
+
+          @media(max-width:1040px){
+            width: 400px;
+          }
+
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 490px;
+          }
+        }
+
+        .pro-img-discount{
+          position: absolute;
+          right:0px;
+          top:-30px;
+          padding: 5px;
+          color:#fff;
+          background-color: #f63;
+        }
+      }
+
+      .pro-hero-bottom-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .p2-h-b-r-top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+
+        }
+
+        .p2-h-b-r-middle {
+          margin-top: 20px;
+          margin-bottom: 25px;
+          display: flex;
+          justify-content: center;
+
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 279px;
+            height: 60px;
+            padding: 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 4px;
+            background: #f63;
+            color: #fff;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+          }
+        }
+
+        .p2-h-b-r-bottom {
+          display: flex;
+          flex-direction: column;
+
+          .g-h-c-l-table {
+            display: flex;
+            flex-direction: column;
+
+            .g-h-c-l-table-s1 {
+              width: 100%;
+              padding: 4px 8px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              background-color: #f3f2f1;
+            }
+
+            .g-h-c-l-table-s2 {
+              width: 100%;
+              padding: 4px 8px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
+
+            .g-h-c-l-table-s3 {
+              width: 100%;
+              padding: 4px 8px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              background-color: #f3f2f1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pro-relatives{
+  margin-top: 50px;
+  
+  .pro-relatives-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    .aksii-card {
+        width: 272px;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        transition: 0.3s ease-in-out;
+    
+        @media (max-width:920px) {
+          width: 250px;
+        }
+    
+        @media (max-width:920px) {
+          width: 210px;
+        }
+    
+        @media (max-width:500px) {
+          width: 100%;
+        }
+    
+        .aksii-card-image {
+          width: 100%;
+          height: 172px;
+          position: relative;
+    
+          img {
+            @media (max-width:920px) {
+              width: 100%;
+            }
+    
+            @media (max-width:500px) {
+              width: 100%;
+              height: 160px;
+            }
+          }
+    
+          p {
+            position: absolute;
+            bottom: 2px;
+            left: 3px;
+            width: 56px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background: #F63;
+            color: #fff;
+          }
+    
+          span {
+            padding: 5px 5px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            cursor: pointer;
+    
+            img {
+              width: 100%;
+              object-fit: contain;
+            }
+          }
+        }
+    
+        .aksii-card-body {
+          display: flex;
+          flex-direction: column;
+    
+          .aksii-card-id {
+            margin: 0;
+            color: #606060;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+          }
+    
+          .aksii-card-prices {
+            margin-top: 10px;
+            margin-bottom: 10px;
+    
+            p {
+              margin: 0;
+              ;
+              color: #414141;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 150%;
+            }
+          }
+    
+          .aksii-card-description {
+            margin: 0;
+            color: #414141;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+    
+            @media(max-width:920px) {
+              height: 100px;
+            }
+    
+            @media(max-width:270px) {
+              height: 100px;
+              margin-bottom: 50px;
+            }
+          }
+    
+          .aksii-card-rating {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            gap: 4px;
+    
+            img {
+              cursor: pointer;
+            }
+          }
+    
+          .aksii-card-btn {
+            cursor: pointer;
+            padding: 8px;
+            background-color: #fff;
+            border-radius: 4px;
+            border: 1px solid #70C05B;
+            color: #70C05B;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+    
+            &:hover {
+              background-color: #F63;
+              border: 1px solid #F63;
+              color: #fff;
+            }
+          }
+        }
+    
+      }
+  }
+}
